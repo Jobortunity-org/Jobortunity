@@ -25,11 +25,15 @@ app.set('view engine', 'ejs');
 app.use(methodOverride('_method'));
 
 
-app.get('/',(req,res)=>{
 
-    res.render('index');
+// EMPLOYEE PAGE STARTS HERE \\
+app.get('/employee', handlePortFolio);
+function handlePortFolio(req, res) {
+  res.render('employee/employee');
+}
 
-});
-app.listen(PORT,()=>{
+
+
+app.listen(PORT, () => {
   console.log(`app is listning on port${PORT}`);
 });
