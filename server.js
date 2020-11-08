@@ -24,7 +24,10 @@ app.use('/public', express.static('public'));
 app.set('view engine', 'ejs');
 app.use(methodOverride('_method'));
 
-
+app.get('/', handleTest);
+function handleTest(req, res) {
+  res.render('signupEmployer');
+}
 
 // EMPLOYEE PAGE STARTS HERE \\
 app.get('/employee', handlePortFolio);

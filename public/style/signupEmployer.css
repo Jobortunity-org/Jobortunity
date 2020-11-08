@@ -1,0 +1,197 @@
+
+body{
+    display: flex;
+    flex-direction: row;
+    background-image: url('../back.png');
+    background-size: cover;  
+    background-repeat: no-repeat, repeat;
+    background-color: #F9F8F9;
+    height: 100vh;
+}
+
+#divForm{
+    text-align: center;
+    width: 55%;
+    height: 80vh;
+    position: absolute;
+    /* top: 1%; */
+    right: 5%;
+}
+
+#FormP{
+    position: absolute;
+    bottom: 3%;
+    right: 15%;
+    color: grey;
+
+}
+
+#h1Form{
+    font-size: x-large;
+    position: absolute;
+    top: 4%;
+    right: 18%;
+    color: green;
+}
+
+form{
+    position: absolute;
+    top: 15%;
+    right: 40%;
+    color: grey;
+
+}
+
+input{
+    width: 150%;
+    border: 1px solid #87BFBB;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#login{
+    position: absolute;
+    left: 6%;
+    background-color: #fe5761;
+}
+
+
+.continar{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 45%;
+    height:85vh;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    left: 25%;
+    top: 15%;
+}
+
+
+#child{
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 45%;
+    height:60vh;
+    border-radius: 15px;
+    background-color: #3D8C92;
+    color: #F9F8F9;
+    position: absolute;
+    left: -14%;
+    top: 10%;
+
+}
+
+#beby{
+    padding: 5%;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 780px) {
+    .continar{
+        width: 80%;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        flex-flow: wrap;
+        position: static;
+        margin-top: 10%;
+        height: 88vh;
+        margin: auto;
+    }
+
+    #child{
+        display: none;
+    }
+
+    #h1Form{
+        font-size: x-large;
+        position: absolute;
+        margin-right: 10%;
+        margin-left: 20%;
+        top: 1%;
+        color: red;
+    }
+   
+    #FormP {
+        position: absolute;
+        bottom: 15%;
+        right: 37%;
+        color: grey;
+        margin: 0;
+      }
+    
+    #divForm{
+        display: flex;
+        height: 90vh;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+    }
+
+
+    form{
+        position: absolute;
+        top: 10%;
+        right: 40%;
+        color: grey;
+    
+    }
+
+  }
+
+
+  @media screen and (max-width: 480px) {
+    .continar{
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        flex-flow: wrap;
+        position: static;
+        margin-top: 10%;
+        height: 88vh;
+    }
+
+    #child{
+        display: none;
+    }
+
+    #h1Form{
+        font-size: medium;
+        position: absolute;
+        margin-right: 15%;
+        top: 1%;
+        color: black;
+    }
+   
+    #FormP {
+        position: absolute;
+        bottom: 5%;
+        right: 30%;
+        color: grey;
+        margin: 0;
+      }
+    
+    #divForm{
+        display: flex;
+        height: 90vh;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+    }
+
+
+    form{
+        position: absolute;
+        top: 10%;
+        right: 40%;
+        color: grey;
+    
+    }
+
+
+  }
