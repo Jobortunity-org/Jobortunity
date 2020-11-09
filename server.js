@@ -26,7 +26,7 @@ app.use(methodOverride('_method'));
 
 app.get('/', handleTest);
 function handleTest(req, res) {
-  res.render('signupEmployer');
+  res.render('index');
 }
 
 // EMPLOYEE PAGE STARTS HERE \\
