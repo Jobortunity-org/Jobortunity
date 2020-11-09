@@ -1,0 +1,363 @@
+@media (max-width: 480px) {
+
+    html{
+        width:100%;
+    }
+   body{
+       /* background-size: cover; */
+    background: url('diana (1).png'); 
+    
+     /* background-repeat: no-repeat;   */
+     background-color: rgb(252, 250, 250);
+     width: 100%;
+     margin: 0;
+     padding:0;
+      }
+  
+      
+  #all{
+    /* width: 100%; height: 100vh; */
+    overflow-y: scroll;
+    margin-left: 7%;
+    margin-right:7% ;
+  }
+
+
+  /* .wrap{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    width: 80%;
+    height: 380px;
+    margin-left: 10%;
+  } */
+  
+  .item {
+      margin-top: 7%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    width:80%;
+    height: 100px;
+    border: 1px solid #ccc;
+    transform: translateY(0);
+    transition: transform .3s;
+     margin-left: 10%; 
+    
+  }
+  
+  .item:hover {
+    transform: translateY(-20px);
+  }
+  
+  img {
+    width: 100%;
+    display: block;
+    height: 200px;
+    
+  }
+  
+  .text {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    padding: 1rem;
+    position: relative;
+    background: #ffffff;
+    height: 150px;
+  }
+  
+  .item:hover .text {
+     background: linear-gradient(0deg, #5355558a, #5355558a, #5355558a);
+    color: #ffffff;
+  }
+  
+  .text h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  .text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    border-top: 40px solid transparent;
+    transform: translateY(-100%);    
+  }
+  .text p {
+    line-height: 1.5;
+  }
+  .imgz-div{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     border-radius: 5px;
+    width: 25%;
+     height: 10%;
+     float: left;
+   }
+
+   #AboutMe, #skills, #achievment{
+    width: 72%;
+  }
+   #AboutMe{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    width: 72%;
+    margin-top: 80.3%;
+    margin-left: 10%;
+    background-color: white;
+    font-size: 1.5em;
+    color: #000000;
+    text-align: justify;
+    padding: 5% 5% 5% 5%;
+   
+  }
+  #videoSection{
+    margin-left: 10%;
+    width: 20%;
+    margin-top: 3%;  
+  } 
+  #person{
+     border-radius: 50%; 
+    height: 300px;
+    border: 7px  solid #fe5761;
+  }
+  #PersonalInfo{
+    line-height: 20px;
+    height: 150px;
+    font-size: 18px;
+}
+
+/* .skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  } */
+
+  #skills{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    width: 75%;
+     margin-top: 7%;
+    margin-left: 10%; 
+    background-color: white ;
+    font-size: 1.5em;
+    color: black;
+    text-align: justify;
+    padding: 5% 5% 3% 3%;   
+  }
+  @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
+  /* CALENDER */
+  .main {
+ 
+    /* position: absolute; */
+    width: 80%;
+    border-radius: 5px;
+    height: 350px;
+    margin-top: 50%;
+     margin-left: 50%; 
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+    transition: all 0.195s ease;
+    transform-style: preserve-3d;
+    padding-bottom:-200px ;
+    
+  }
+  .main.is-rotated-left {
+    transform: translate(-50%, -50%) rotateY(-4deg);
+  }
+  .main.is-rotated-right {
+    transform: translate(-50%, -50%) rotateY(4deg);
+  }
+  .main .sideb,
+  .main .right-wrapper {
+    background-color:  #91d1cdc5;
+    width: 100%;
+    float: left;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+  }
+  .main .header {
+    padding: 15px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .main .header i {
+    padding: 0 5px;
+    cursor: pointer;
+  }
+  .main .header span {
+    display: inline-block;
+    margin: 0 3px;
+    font-weight: 700;
+  }
+  .main .right-wrapper {
+    background-color: #f05855;
+    color: white;
+    transform-origin: left center;
+    transform: rotateY(110deg);
+    transition: all 0.5s;
+  }
+  .main .right-wrapper.is-active {
+    transform: rotateY(0deg);
+  }
+  .main .right-wrapper .header {
+    text-align: left;
+    justify-content: center;
+  }
+  .main .right-wrapper .day {
+    font-size: 12em;
+    text-indent: -12px;
+    display: block;
+  }
+  .main .right-wrapper .month {
+    font-size: 2.5em;
+  }
+  .main .sideb .showDate {
+    color: white;
+    text-align: right;
+    width: 100%;
+  }
+  .main .sideb .showDate i {
+    cursor: pointer;
+    background: #f05855;
+    border-radius: 4px;
+    padding: 8px 12px;
+    transform: scale(1);
+    transition: all 0.3s;
+  }
+  .main .sideb .showDate i.is-active {
+    transform: scale(-1);
+  }
+  .main .sideb table {
+    text-align: center;
+    width: 90%;
+    margin: 30px auto 0;
+    table-layout: fixed;
+    border-collapse: collapse;
+    
+  }
+  .main .sideb table tbody:before {
+    content: "-";
+    display: block;
+    line-height: 0.75em;
+    color: transparent;
+  }
+  .main .sideb table th {
+    color: #f05855;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .main .sideb table td {
+    padding: 11px 5px;
+    color: #ced0ce;
+    font-size: 0.75em;
+    transition: all 0.3s;
+    position: relative;
+  }
+  .main .sideb table td::before {
+    
+    content: "";
+    display: none;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -8px);
+    background-color: #f05855;
+  }
+  .main .sideb table td.currentDay::before {
+    display: block;
+  }
+  .main .sideb table td.selectable {
+    color: white;
+    cursor: pointer;
+  }
+  .main .sideb table td.selectable:hover {
+    background: #f05855;
+    color: white;
+  }
+  .main .sideb table td.between {
+    background-color: #333;
+    color: white;
+  }
+  .main .sideb table td.active,
+  .main .sideb table td.hover {
+    background: #f05855;
+    color: white;
+  }
+  #achievment{
+   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    width: 75%;
+     
+    margin-left: 10%;
+    background-color: white;
+    font-size: 1.5em;
+    color: #000000;
+    text-align: justify;
+    padding: 5% 5% 5% 5%;
+    margin-bottom: 4%;
+}
+#PersonalInfo{
+    line-height: 20px;
+    height: 150px;
+}
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    margin: 0;
+    
+       }
+ .clear{
+     content: '';
+     display: table;
+     clear: both;
+ }
+ #e{
+     height: 150px;
+ }
+ #f{
+     padding-top: -40%;
+     
+ }
+ #myVideo{
+     display: none;
+ }
+ .upd{
+  border-radius: 5px;
+  height: 40px;
+  background-color: #87BFBB;
+  height: 50px;
+  margin-bottom: 4%;
+  margin-left: 55%
+}
+.dlt{
+  border-radius: 5px;
+  margin-left: 10%;
+  background-color:#FE5762;
+  height: 50px;
+  margin-bottom: 4%;
+} 
+
+
+#wrapper{
+ /* display: flex;  */
+  align-items: center;
+  justify-content: center;
+  padding-top: 3%;
+}
+
+ }
