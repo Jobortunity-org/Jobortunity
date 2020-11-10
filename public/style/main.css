@@ -6,7 +6,14 @@
     font-family: 'Hind Madurai', sans-serif;
      }
   
- 
+ .showuptade {
+   display: none;
+ }
+
+ #showuptadebtn{
+  display: none;
+  margin-top: 1%;
+ }
    h2{
     font-family: 'Hind Madurai', sans-serif;
     font-size: 28px;
