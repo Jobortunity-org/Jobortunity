@@ -1,0 +1,306 @@
+
+@media (max-width: 480px){
+    body{
+        display: flex;
+        flex-direction: row;
+        background-image: url('../media/images/images2/diana.png');
+        background-size: cover;  
+        background-repeat:  repeat;
+        background-color: #F9F8F9;
+        height: 100vh;
+    }
+
+#divForm{
+    text-align: center;
+    width: 60%;
+    height: 50vh;
+    position: absolute;
+    top: 10%;
+    right: 20%;
+   
+}
+
+#FormP{
+    position: absolute;
+    bottom: 5%;
+    right: 18%;
+    color: grey;
+
+}
+
+#h1Form{
+    font-size: x-large;
+    position: relative;
+    top: 10%;
+    right: 3%;
+    color: white;
+}
+
+form{
+    position: absolute;
+    top: 35%;
+    right: 25%;
+    color: white;
+    
+
+}
+
+#input1{
+    width: 110%;
+    border: solid 2px black;
+    padding: 11px;
+    border-radius: 5px;
+    
+}
+
+#input3{
+    width: 110%;
+    border: solid 2px black;
+    padding: 11px;
+    border-radius: 5px;
+}
+#input2{
+    width: 110%;
+    height: 5em;
+    border: solid 2px black;
+   
+    padding: 11px;
+    border-radius: 5px; 
+}
+
+
+#login{
+    position: absolute;
+    left: 2%;
+    background-color: #fe5761;
+}
+
+#send{
+    width: 10em;
+    height: 3em;
+    color: white;
+    /* padding: 15px; */
+    /* padding-bottom: 15%; */
+    border-radius: 5px; 
+    background-color:black ;
+    margin-left: 18.5%;
+}
+
+#send:hover{
+    background-color:#fe5761 ;
+}
+.continar{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 20em;
+    height:80vh;
+    margin-left: 15% ;
+    border-radius: 15px;
+    background-color: #3C8D92;
+    position: absolute;
+    
+    top: 25%; 
+}
+
+
+#child{
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 40%;
+    height:55vh;
+    border-radius: 15px;
+    background-color: #3D8C92;
+    color: #F9F8F9;
+    position: absolute;
+    left: -10%;
+    top: 7%;
+
+}
+
+#beby{
+    padding: 5%;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+}
+}
+
+@media (min-width: 481px) and (max-width:999px)  {
+    .continar{
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        flex-flow: wrap;
+        position: static;
+        margin-top: 10%;
+    }
+
+    #child{
+        display: none;
+    }
+    #FormP {
+        position: absolute;
+        bottom: -10%;
+        right: 18%;
+        color: grey;
+      }
+    
+    #divForm{
+        width: 100%;
+    }
+  }
+
+@media (min-width: 1000px){
+
+    body{
+        display: flex;
+        flex-direction: row;
+        background-image: url('../media/images/images2/back.png');
+        background-size: cover;  
+        background-repeat:  repeat;
+        background-color: #F9F8F9;
+        height: 100vh;
+    }
+
+#divForm{
+    text-align: center;
+    width: 60%;
+    height: 50vh;
+    position: absolute;
+    top: 10%;
+    right: 20%;
+   
+}
+
+#FormP{
+    position: absolute;
+    bottom: 5%;
+    right: 18%;
+    color: grey;
+
+}
+
+#h1Form{
+    font-size: xx-large;
+    position: absolute;
+    top: 4%;
+    right: 25%;
+    color: white;
+}
+
+form{
+    position: absolute;
+    top: 35%;
+    right: 45%;
+    color: white;
+    
+
+}
+
+#input1{
+    width: 150%;
+    border: solid 2px black;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#input3{
+    width: 150%;
+    border: solid 2px black;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#input2{
+    width: 150%;
+    height: 9em;
+    border: solid 2px black;
+   
+    padding: 15px;
+    border-radius: 5px; 
+}
+
+
+#login{
+    position: absolute;
+    left: 6%;
+    background-color: #fe5761;
+}
+
+#send{
+    width: 10em;
+    height: 3em;
+    color: white;
+    padding: 15px;
+    padding-bottom: 15%;
+    border-radius: 5px; 
+    background-color:black ;
+    margin-left: 47%;
+}
+
+#send:hover{
+    background-color:#fe5761 ;
+}
+.continar{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 45%;
+    height:80vh;
+    border-radius: 15px;
+    background-color: #3C8D92;
+    position: absolute;
+    left: 28.5%;
+    top: 18%;
+}
+
+
+#child{
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 40%;
+    height:55vh;
+    border-radius: 15px;
+    background-color: #3D8C92;
+    color: #F9F8F9;
+    position: absolute;
+    left: -10%;
+    top: 7%;
+
+}
+
+#beby{
+    padding: 5%;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+}
+
+
+/* @media screen and (max-width: 780px) {
+    .continar{
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        flex-flow: wrap;
+        position: static;
+        margin-top: 10%;
+    }
+
+    #child{
+        display: none;
+    }
+    #FormP {
+        position: absolute;
+        bottom: -10%;
+        right: 18%;
+        color: grey;
+      }
+    
+    #divForm{
+        width: 100%;
+    }
+  } */
+ } 
+
+
+

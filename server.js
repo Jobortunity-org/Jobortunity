@@ -181,6 +181,7 @@ function handleHomePage(req, res) {
   res.render('index');
 }
 
+
 function ApplicantUpdate(req, res){
   let id =req.params.id;
   let recievedUpdate = req.body;
