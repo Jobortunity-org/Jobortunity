@@ -2,7 +2,7 @@
 body{
     display: flex;
     flex-direction: row;
-    background-image: url('../back.png');
+    background-image: url('../media/images/images2/back.png');
     background-size: cover;  
     background-repeat: no-repeat, repeat;
     background-color: #F9F8F9;

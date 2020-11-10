@@ -14,22 +14,22 @@
     <div id="divForm">
         <h1 id="h1Form">Register An Account</h1>
 
-    <form action="">
-        <input type="text" name="" id="" placeholder="Full Name"> <br><br>
-        <input type="text" name="" id="" placeholder="Email Address"> <br><br>
-        <input type="text" name="" id="" placeholder="Password"> <br><br>
-        <input type="text" name="" id="" placeholder="Birth Of Day"> <br><br>
-        <input type="text" name="" id="" placeholder="Phone Number"> <br><br>
-        <input type="text" name="" id="" placeholder="Company Name"> <br><br>
-        <input type="text" name="" id="" placeholder="Company Industry"> <br><br>
-        <input type="text" name="" id="" placeholder="Company Location"> <br><br>
+    <form action="/signup/Employer" method="POST">
+        <input type="text" name="fullname" id="fullname" placeholder="Full Name" required> <br><br>
+        <input type="email" name="email" id="email" placeholder="Email Address" required> <br><br>
+        <input type="password" name="pass" id="pass" placeholder="Password" required> <br><br>
+        <input type="date" name="DOB" id="DOB" placeholder="Birth Of Day" required> <br><br>
+        <input type="tel" name="phonenumber" id="phonenumber" placeholder="Phone Number" required> <br><br>
+        <input type="text" name="companyname" id="companyname" placeholder="Company Name" required> <br><br>
+        <input type="text" name="companyindustry" id="companyindustry" placeholder="Company Industry" required> <br><br>
+        <input type="text" name="companylocation" id="companylocation" placeholder="Company Location" required> <br><br>
 
         <input type="submit" value="Register" id="Register"><br><br>
 
     </form>
 
     </div>
-    <p id="FormP">Dont Have an Account? <a href=""> Register Here</a></p>
+    <p id="FormP">Back To Login Page? <a href="/login?type=Employer"> login Here</a></p>
 
 
     <div id="child">

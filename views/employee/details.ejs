@@ -6,14 +6,20 @@
     <source src="../../public/media/images/try.mp4" type="video/mp4">
 </video>  
 
+<form action="/Applicant/<%= ApplicantInfo.id %>?_method=PUT" method="POST">
+
 <div id="all">
 <div class="wrap">
     <div class="item">
-        <img src="https://picsum.photos/400/400?random=1" alt="">
-        <div class="text">           
-            <h2>John</h2>
-            <p style="text-align:center;background-image: url(https://i.imgur.com/mPPEsss.gif);background-repeat:no-repeat;widows: 300px;height:100px; "> SoftWare developer, Translator & Content writer
-            </p>
+        <img src="<%= ApplicantInfo.images %>" alt="">
+        <div class="text">      
+          <input class="showuptade" type="text" id="images" name="images" value="<%= ApplicantInfo.images %>">     
+            <h2><%= ApplicantInfo.fullname %></h2>
+
+            <input class="showuptade" type="text" id="fullname" name="fullname" value="<%= ApplicantInfo.fullname %>">
+
+            <p><%= ApplicantInfo.jobtitle %>  </p>
+            <input class="showuptade" type="text" id="jobtitle" name="jobtitle" value="<%= ApplicantInfo.jobtitle %>">
         </div> 
     </div>
 </div>
@@ -24,14 +30,16 @@
     <!-- <img src="https://i.imgur.com/mPPEsss.gif" alt=""> -->
     <!-- <hr style="height:.5px;color:gray;background-color:gray"> -->
     <hr style="width:30%;text-align:left;margin-left:0">
-    <p id="aboutMeText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sit laudantium deserunt
-        adipisicime cum illum, maiores sint! Quia soluta odit maxime voluptate! Minus quasieveniet culpa, delectus, maxime excepturi omnis inventore nisi veniam dolorum quia ex sit accusantium placeat, cum quas ipsam.
+    <p id="aboutMeText">  <%= ApplicantInfo.aboutme %> </p>
+    <textarea class="showuptade"  id="aboutme" name="aboutme" rows="4" cols="50" >
+      <%= ApplicantInfo.aboutme %>
+      </textarea>
 </div>
 </div>  
 <!-- -------------------------------------------------- -->
 <div id="c">
 <div id="videoSection">
-    <iframe id="person" src="../../public/media/images/amal.mp4" width="300" height="300"></iframe>
+    <iframe id="person" src="<%= ApplicantInfo.video %>" width="300" height="300"></iframe>
 </div>  
 </div>
 <!-- ------------------------------------------------ -->
@@ -41,15 +49,21 @@
     <hr style="width:30%;text-align:left;margin-left:0">
 
     <ul id="PersonalInfo">
-        <li>Full name: </li>
+        <li>Full name: <%= ApplicantInfo.fullname %></li>
+
         <br>
-        <li>Phone Number: </li>
+        <li>Phone Number: <%= ApplicantInfo.phonenumber %></li>
+        <input class="showuptade" type="text" id="phonenumber" name="phonenumber" value="<%= ApplicantInfo.phonenumber %>">
         <br>
-        <li>Email: </li>
+        <li>Email: <%= ApplicantInfo.email %></li>
+        <input class="showuptade" type="text" id="email" name="email" value="<%= ApplicantInfo.email %>">
         <br>
-        <li>Adress: </li>
+        <li>Adress: <%= ApplicantInfo.applicantaddress %></li>
+        <input class="showuptade" type="text" id="applicantaddress" name="applicantaddress" value="<%= ApplicantInfo.applicantaddress %>">
         <br>
-        <li>D.O.B: </li>
+        <li>D.O.B: <%= ApplicantInfo.dob %></li>
+        <input class="showuptade" type="text" id="dob" name="dob" value="<%= ApplicantInfo.dob %>">
+        <input class="showuptade" type="text" id="video" name="video" value="<%= ApplicantInfo.video %>">
 
     </ul>
 </div>
@@ -140,13 +154,13 @@
     <h2>Achievment</h2>
     <hr style="width:50%;text-align:left;margin-left:0">
     <div>
-        <li> kjgjkdkg </li>
+        <li> <%= ApplicantInfo.achievement %></li>
+        <input class="showuptade" type="text" id="achievement" name="achievement" value="<%= ApplicantInfo.achievement %>">
     </div>
-    <div>
-       <li>fdffddf</li>
-    </div>
-    <li>hfjjfkfkfd</li>
+
 </div>
 
 </div>  
 </div> 
+<input class="dlt" id="showuptadebtn"  style= "width: 200px; position: absolute;" type="submit" value="Save">
+</form>

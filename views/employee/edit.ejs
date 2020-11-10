@@ -20,11 +20,15 @@
 
         <!--------------- ADDING TWO BUTTONS  ------------->
 <div id="wrapper">
-    <button class="dlt" style= "width: 200px; position: absolute;"> <strong>Delete</strong> </button>
-    <button class="upd"  style=" width: 200px;  position: absolute;"> <strong>Update </strong> </button>
+    <form action="/Applicant/<%= ApplicantInfo.id %>?_method=DELETE" method="POST">
+        <input  value="<%= ApplicantInfo.id %>" type="hidden" name="ItemDeleted">
+        <input class="dlt" id="deleteInfo" style= "width: 200px; position: absolute;" type="submit" value="DELETE">
+    </form>
+    <!-- <button class="dlt" id="deleteInfo" style= "width: 200px; position: absolute;"> <strong>Delete</strong> </button> -->
+    <button class="upd" id="saveInfo"  style=" width: 200px;  position: absolute;"> <strong>Update </strong> </button>
     </div>
-   
-   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../public/js/employee.js"></script>
 </body>
 </html>
 
