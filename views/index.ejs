@@ -11,29 +11,15 @@
   </head>
   <body>
 
-    <nav>
-      <ul><li><a class="active"><i class="fa fa-home"> <small> Home </small></i></a></li></ul>
-      <ul><li><a><i class="fa fa-lightbulb-o"> <small></small> Vision</small></i></a></li></ul>
-      <ul><li><a><i class="fa fa-user-circle"> <small> Sign up</small></i></a></li></ul>
-      <ul><li><a><i class="fa fa-group"><small> About us</small></i></a></li></ul>
-      <ul><li><a><i class="fa fa-edit"> <small> Feedback</small></i></a></li></ul>
-  
-  
-      <div class="tubelight">
-          <div class="light-ray"></div>
-      </div>
-  
-  </nav>
+<%- include('header') %>
 
     <div id="intro">
       <header class="viewport-header">
-        <video playsinline autoplay muted id="bgvid" width="1000" height="900">
+        <video playsinline autoplay muted id="video1" >
           <source src="../public/media/videos/myvideo3.mp4" type="video/mp4" />
         </video>
 
-        <!-- <video playsinline autoplay muted id="bgvid" >
-          <source src="../media/videos/mobile.mp4" type="video/mp4" />
-        </video> -->
+        <img id="alternative" src="../public/media/images/images2/Screenshot (487).png" alt="">
 
       </header>
       <button type="submit" id="login" onclick="location.href = `/login?type=Employer`;">For Employer</button>
@@ -93,17 +79,17 @@
         
       <div id="left">
         <img class="workimg1" src="../public/media/images/woman.png" alt="">
-        <p id="myp">Applicants register and include their story in a video Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque harum quo inventore incidunt nisi voluptates rem sed itaque temporibus facilis eveniet</p>
+        <p id="myp"><strong> Applicants</strong>	 sign up and make a profile. They should include basic information in addition to a video of them which tells employers their story and what skills or talents they have.</p>
       </div>
 
       <div id="center">
         <img class="workimg2" src="../public/media/images/man.png" alt="">
-        <p id="myp">Investors & employers search for the suitable candidate Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure voluptate a consequuntur sapiente magnam earum odit commodi corrupti explicabo minus praesentium </p>
+        <p id="myp"> <strong>Investors & Employers</strong> Investors and Employers create an account in this website then search for the suitable candidate according to their needs. </p>
       </div>
     
     <div id="right">
-      <img class="workimg3" src="../public/media/images/man.png" alt="">
-      <p id="myp">Contact Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi in hic odio porro sit atque alias reptur perferendis nihil atque temporibus minima aperiam explicabo!</p>
+      <img class="workimg3" src="../public/media/images/images2/togather.png" alt="">
+      <p id="myp"> <strong> Applicants & Employers</strong> then can be connected with each other so that they start with building their job.</p>
       
     </div>
   </div>
@@ -112,41 +98,23 @@
     <div id="vissioncontainer">
 
       <div id="vision1">
-     <h1><i class="	fa fa-leaf"></i> Our Mission</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis accusantium exercitationem, optio nihil maxime mollitia aperiam cupiditate consectetur! Quae fugiat accusantium adipisci obcaecati nobis doloribus error culpa rem consectetur hic.</p>
+        <h1><i class="fa fa-eye"></i> Our Vision</h1>
+      <p> Since we are in a world filled with opportunities and chances, but we still face difficulties finding them. Therefore, we wanted to make the way shorter for skilled and talented people to connect them with the most suitable opportunity.
+        </p>
       </div>
 
       <div id="vision2">
-        <h1><i class="fa fa-eye"></i> Our Vision</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe consequuntur eum nam. Maiores quas eos, magnam dolor et pariatur cum? Alias expedita optio quam dolorum non nisi molestiae, aperiam eos?</p>
+        <h1><i class="	fa fa-leaf"></i> Our Mission</h1>
+        
+        <p>This website was created based on solving the problem that is widely spread. We are providing a platform for people who want to make their voices to be heard and their skills to be noticed, by those who can offer the opportunity.</p>
       </div>
 
-      <!-- <div id="vision3">
-        <h1>Our Vision</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, magnam molestias assumenda expedita repellat eligendi delectus ratione temporibus quibusdam quae voluptates maiores deserunt reprehenderit tenetur. Nihil aut perferendis vero tempore.</p>
-      </div> -->
+     
     </div>
 
-    <footer>
 
-  <div id="footerdiv">
-
-    <div class="social-menu">
-      
-      <ul>
-        <li><a href=""><img src="" class="fa fa-facebook"></a></li>
-        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-        <li><a href=""><i class="fa fa-instagram"></i></a></li>
-        <li><a href=""><i class="fa fa-youtube"></i></a></li>
-        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-      </ul>
-    </div>
+    <%- include('footer') %>
     
-  </div>
-
-    </footer>
-    <script src="https://kit.fontawesome.com/yourcode.js"></script>
     <script src="../public/js/app.js"></script>
   </body>
 </html>
