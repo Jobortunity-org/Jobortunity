@@ -28,18 +28,18 @@
         <div id="middlebox">
             <h2>Contact</h2>
             <ul class="ul">
-                <li>Name: </li>
-                <li>Phone Number: </li>
-                <li>E-mail: </li>
+                <li>Name: <%= EmployerInfo.fullname %></li>
+                <li>Phone Number: <%= EmployerInfo.phonenumber %></li>
+                <li>E-mail: <%= EmployerInfo.email %> </li>
             </ul>
         </div>
 
         <div id="rightbox">
             <h2>Personal Information:</h2>
             <ul class="ul">
-                <li>Company Name: Lorem ipsum dolor . </li>
-                <li>Company Industry: Lorem ipsum dolor</li>
-                <li>Location: Lorem ipsum dolor Lorem ipsum dolor </li>
+                <li>Company Name: <%= EmployerInfo.companyname %>  </li>
+                <li>Company Industry: <%= EmployerInfo.companyindustry %> </li>
+                <li>Location: <%= EmployerInfo.companylocation %>  </li>
             </ul>
         </div>
     </div>
@@ -49,9 +49,9 @@
             Select By Title
         </h3>
         <select name="select By Title" id="select">Select By Title
-            <option class="opt" value="">Full Stack Developer</option>
-            <option class="opt" value="">Cook</option>
-            <option class="opt" value="">Painter</option>
+            <% jobtitleInfo.forEach((val)=>{ %>
+                <option class="opt" value="<%= val.jobtitle %>"><%= val.jobtitle %></option>
+         <% }); %>
         </select>
     </div>
     <br>
@@ -61,38 +61,26 @@
     <!------------------Applicants Div-------------->
     <div id="people">
         <!-- <h1>Meet Our Applicants</h1> -->
-
-        <div id="img1">
-            <h2 class="Names"> <a href="">john</a> </h2>
-            <img class="app-Pic" src="https://picsum.photos/400/400?random=1" alt="">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic dolor temporibus voluptas dolore nobis esse
-                atque rerum sit sed voluptates. Provident ipsum quasi eligendi cumqu</p>
+        <% applicantProfiles.forEach((val)=>{ %>
+        <div class="imgsdiv" id="<%= val.jobtitle %>">
+            <h2 class="Names"> <a href="/Applicant/<%= val.id %>"><%= val.fullname %></a> </h2>
+            <img class="app-Pic" src="<%= val.images %>" alt="">
+            <p><%= val.aboutme %></p>
         </div>
-        <div id="img2">
-            <h2 class="Names"> <a href="">john</a> </h2>
-            <img class="app-Pic" src="https://picsum.photos/400/400?random=1" alt="">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic dolor temporibus voluptas dolore nobis esse
-                atque rerum sit sed voluptates. Provident ipsum quasi eligendi cumqu</p>
+        <% }); %>
+        
+        <div class="imgsdiv" id="javade">
+            <h2 class="Names"> <a href="">test</a> </h2>
+            <img class="app-Pic" src="" alt="">
+            <p>any thing</p>
         </div>
-
-        <div id="img3">
-            <h2 class="Names"> <a href="">john</a> </h2>
-            <img class="app-Pic" src="https://picsum.photos/400/400?random=1" alt="">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic dolor temporibus voluptas dolore nobis esse
-                atque rerum sit sed voluptates. Provident ipsum quasi eligendi cumqu</p>
-        </div>
-    
-    <div id="img4">
-        <h2 class="Names"> <a href="">john</a> </h2>
-        <img class="app-Pic" src="https://picsum.photos/400/400?random=1" alt="">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic dolor temporibus voluptas dolore nobis esse
-            atque rerum sit sed voluptates. Provident ipsum quasi eligendi cumqu</p>
-    </div>
 </div>
 <br>
 <br>
 <br>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../../public/js/employer.js"></script>
 </body>
 
 </html>
