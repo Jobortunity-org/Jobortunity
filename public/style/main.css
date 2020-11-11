@@ -358,6 +358,16 @@
   margin-bottom: 4%;
 } 
 
+#compare{
+  border-radius: 5px;
+  background-color:#FE5762;
+  height: 50px;
+  width: 200px;
+  position: absolute;
+  left: 75%;
+  margin-top: -12%;
+}
+}
 .upd:hover{
 background-color: #3C8D92;
 font-size: 18px;

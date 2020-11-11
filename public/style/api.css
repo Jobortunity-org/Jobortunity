@@ -1,33 +1,43 @@
-
-body{
+body{/*./media/images/images2/back.png*/
     background-image:url('../media/images/images2/back.png');
    background-size: cover ;
+   background-attachment: fixed;
    background-color: rgb(245, 243, 243);
    font-family:  'Hind Madurai', sans-serif;
+   margin-left: 10%;
+   margin-right: 10%;
 }
-
-#api-div{
+.api-div{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
     align-items: center;
     background-color: white;
     height: 450px;
-    width: 300px;
+    width: 350px;
     text-align: center;
+    margin-top: 5%;
     padding: 2% 3% 3% 3%;
-    margin-left: 36%;
-    margin-top: 3%;
 }
-
 h1{
     font-size: 35px;
     text-align: center;
     color: #3C8D92;
 }
-#api-div:hover{
+.api-div:hover{
     box-shadow: 0 8px 8px 0 rgba(173, 87, 87, 0.514), 0 6px 20px 0 rgba(218, 113, 113, 0.63);
 }
-  
-
-
- 
+h4,h5,h6{
+    font-size: 15px;
+    margin: 15px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 5px;
+    padding: 5px;
+  }
+  .grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }

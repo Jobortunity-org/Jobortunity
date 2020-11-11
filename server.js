@@ -31,11 +31,13 @@ app.post('/loginDB', CheckDBLogin);
 app.get('/signup/:type', singUpPages);
 app.post('/signup/:type', handelSignup);
 app.get('/Applicant/:id', handelApplicant);
+app.get('/ApplicantFE/:id', handelApplicantForEmp);
 app.get('/Employer/:id', handelEmployer);
 app.put('/Applicant/:id', ApplicantUpdate);
 app.delete('/Applicant/:id', ApplicantDelete);
 app.get('/jobs', githubjob);
 app.get('/job', searchjob);
+app.get('/compare', comparing);
 
 
 /***********************CONSTRUCTOR START *********************************************** */
@@ -73,14 +75,23 @@ function Empolyer(personEmployer) {
 
 function Jobb(object) {
   this.title = object.title;
-  this.description = object.description;
-  this.label = object.category.label;
-  this.salary = object.salary_max;
-  this.time = object.contract_time;
+  this.description = object.description ? object.description : 'No Available Description For This Job';
+  this.label = object.category.label ? object.category.label : 'No Available Category For This Job';
+  this.salary = object.salary_max ? object.salary_max : 'No Available Salary For This Job';
+  this.time = object.contract_time ? object.contract_time : 'No Available Contract Time For This Job';
 }
 /***********************CONSTRUCTOR end *********************************************** */
 
 /*************************************** jobs  api begin ********************************/
+function comparing(req, res) {
+  searchjob(req, res).then(dataJobsRecived => {
+    res.render('employee/compareSkill', { jobs: dataJobsRecived });
+  }).catch(error => {
+    console.log('Error in coparing call', error);
+  });
+}
+
+
 
 function githubjob(request, response) {
   let description = request.query.description;
@@ -97,19 +108,35 @@ function githubjob(request, response) {
     });
 }
 
+// function searchjob(request, response) {
+//   let description = request.query.description;
+//   let ID = process.env.ID;
+//   let API_KEY = process.env.API_KEY;
+//   superagent.get(`https://api.adzuna.com/v1/api/jobs/gb/search/1?app_id=${ID}&app_key=${API_KEY}&results_per_page=20&what=${description}&content-type=application/json`)
+//     .then((data) => {
+//       let jsonOjb = data.body.results;
+//       console.log(jsonOjb);
+//       let value = jsonOjb.map(element => {
+//         return new Jobb(element);
+//       });
+//       console.log(value);
+//       response.status(200).send(value);
+//     }).catch((error) => {
+//       response.status(200).send('Sorry, something went wrong' + error);
+//     });
+// }
+
 function searchjob(request, response) {
   let description = request.query.description;
   let ID = process.env.ID;
   let API_KEY = process.env.API_KEY;
-  superagent.get(`https://api.adzuna.com/v1/api/jobs/gb/search/1?app_id=${ID}&app_key=${API_KEY}&results_per_page=20&what=${description}&content-type=application/json`)
+  return superagent.get(`https://api.adzuna.com/v1/api/jobs/gb/search/1?app_id=${ID}&app_key=${API_KEY}&results_per_page=50&what=${description}&content-type=application/json`)
     .then((data) => {
       let jsonOjb = data.body.results;
-      console.log(jsonOjb);
       let value = jsonOjb.map(element => {
         return new Jobb(element);
       });
-      console.log(value);
-      response.status(200).send(value);
+      return value;
     }).catch((error) => {
       response.status(200).send('Sorry, something went wrong' + error);
     });
@@ -166,6 +193,7 @@ function handelEmployer(req, res) {
   });
 
 }
+
 function handelApplicant(req, res) {
 
   let applicantId = req.params.id;
@@ -183,6 +211,22 @@ function handelApplicant(req, res) {
   });
 }
 
+function handelApplicantForEmp(req, res) {
+
+  let applicantId = req.params.id;
+
+  let stetment = `SELECT * FROM applicants WHERE id=${applicantId};`;
+
+  client.query(stetment).then(data => {
+
+    let ApplicantInfo = data.rows[0];
+
+    res.render('employee/employee', { ApplicantInfo: ApplicantInfo });
+
+  }).catch((error) => {
+    console.log('error happend in the handelApplicant SQL', error);
+  });
+}
 
 function singUpPages(req, res) {
 
