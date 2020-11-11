@@ -18,9 +18,3 @@ $(document).ready(function () {
 
 
 });
-
-
-// $('#people').children().each(function () {
-
-//     console.log($(this).attr('id'));
-// });

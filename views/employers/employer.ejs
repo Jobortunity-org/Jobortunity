@@ -63,7 +63,7 @@
         <!-- <h1>Meet Our Applicants</h1> -->
         <% applicantProfiles.forEach((val)=>{ %>
         <div class="imgsdiv" id="<%= val.jobtitle %>">
-            <h2 class="Names"> <a href="/Applicant/<%= val.id %>"><%= val.fullname %></a> </h2>
+            <h2 class="Names"> <a href="/ApplicantFE/<%= val.id %>"><%= val.fullname %></a> </h2>
             <img class="app-Pic" src="<%= val.images %>" alt="">
             <p><%= val.aboutme %></p>
         </div>
