@@ -1,13 +1,25 @@
+*{
+    padding: 0;
+    margin:0 ;
+}
+
 
 @media (max-width: 480px){
+
+
+.small{
+    display: none;
+}
+
+
     body{
-        display: flex;
+        /* display: flex; */
         flex-direction: row;
         background-image: url('../media/images/images2/diana.png');
         background-size: cover;  
         background-repeat:  repeat;
         background-color: #F9F8F9;
-        height: 100vh;
+        /* height: 100vh; */
     }
 
 #divForm{
@@ -15,7 +27,7 @@
     width: 60%;
     height: 50vh;
     position: absolute;
-    top: 10%;
+    top: 15%;
     right: 20%;
    
 }
@@ -38,7 +50,7 @@
 
 form{
     position: absolute;
-    top: 35%;
+    top: 50%;
     right: 25%;
     color: white;
     
@@ -153,27 +165,27 @@ form{
 @media (min-width: 1000px){
 
     body{
-        display: flex;
-        flex-direction: row;
+        /* display: flex;
+        flex-direction: row; */
         background-image: url('../media/images/images2/back.png');
         background-size: cover;  
-        background-repeat:  repeat;
+        background-repeat:  no-repeat;
         background-color: #F9F8F9;
-        height: 100vh;
+        /* height: 100vh; */
     }
 
 #divForm{
     text-align: center;
     width: 60%;
-    height: 50vh;
-    position: absolute;
+    height: 100vh;
+    /* position: absolute; */
     top: 10%;
     right: 20%;
    
 }
 
 #FormP{
-    position: absolute;
+    /* position: absolute; */
     bottom: 5%;
     right: 18%;
     color: grey;
@@ -183,15 +195,15 @@ form{
 #h1Form{
     font-size: xx-large;
     position: absolute;
-    top: 4%;
-    right: 25%;
+    top: 17%;
+    right: 36.5%;
     color: white;
 }
 
 form{
     position: absolute;
-    top: 35%;
-    right: 45%;
+    top: 26%;
+    right: 43%;
     color: white;
     
 
@@ -235,7 +247,7 @@ form{
     padding-bottom: 15%;
     border-radius: 5px; 
     background-color:black ;
-    margin-left: 47%;
+    margin-left: 38%;
 }
 
 #send:hover{
@@ -300,6 +312,8 @@ form{
         width: 100%;
     }
   } */
+
+
  } 
 
 

@@ -1,40 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
-    <link rel="stylesheet" href="../public/style/singupApplicant.css">
-</head>
-<body>
-
-
-<div class="continar">
-
-    <div id="divForm">
+    <link rel="stylesheet" href="../public/style/singupApplicant.css" />
+  </head>
+  <body>
+    <div class="continar">
+      <div id="divForm">
         <h1 id="h1Form">Register An Account</h1>
 
-    <form action="/signup/Applicant" method="POST">
-        <input type="text" name="fullname" id="fullname" placeholder="Full Name" required> <br><br>
-        <input type="email" name="email" id="email" placeholder="Email Address" required> <br><br>
-        <input type="password" name="pass" id="pass" placeholder="Password" required> <br><br>
-        <input type="date" name="DOB" id="DOB" placeholder="Birth Of Day" required> <br><br>
-        <input type="tel" name="phonenumber" id="phonenumber" placeholder="Phone Number" required> <br><br>
-        <input type="submit" value="Register" id="Register"><br><br>
+        <form action="/signup/Applicant" method="POST">
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            placeholder="Full Name"
+            required
+          />
+          <br /><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            required
+          />
+          <br /><br />
+          <input
+            type="password"
+            name="pass"
+            id="pass"
+            placeholder="Password"
+            required
+          />
+          <br /><br />
+          <input
+            type="date"
+            name="DOB"
+            id="DOB"
+            placeholder="Birth Of Day"
+            required
+          />
+          <br /><br />
+          <input
+            type="tel"
+            name="phonenumber"
+            id="phonenumber"
+            placeholder="Phone Number"
+            required
+          />
+          <br /><br />
+          <input type="submit" value="Register" id="Register" /><br /><br />
+        </form>
+      </div>
+      <p id="FormP">
+        Back To Login Page? <a href="/login?type=Applicant"> Login Here</a>
+      </p>
 
-    </form>
-
-    </div>
-    <p id="FormP">Back To Login Page? <a href="/login?type=Applicant"> Login Here</a></p>
-
-
-    <div id="child">
+      <div id="child">
         <div id="beby">
-        <h1>Register</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus est sunt, placeat a laudantium assumenda nostrum ad, obcaecati quo praesentium, similique accusantium provident aspernatur expedita esse asperiores aliquid earum commodi.</p>
+          <h1>Register</h1>
+          <p>
+            This website was created based on solving the problem that is widely
+            spread. We are providing a platform for people who want to make
+            their voices to be heard and their skills to be noticed, by those
+            who can offer the opportunity.
+          </p>
         </div>
+      </div>
     </div>
-
-</div>
-</body>
+  </body>
 </html>

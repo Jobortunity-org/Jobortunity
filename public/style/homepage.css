@@ -146,6 +146,12 @@ border: solid black 0.3em;
   object-position: center;
   filter: grayscale(100%);
 }
+
+a{
+
+  text-decoration: none;
+}
+
 .honeycomb-cell_title
 {
   height: 100%;
