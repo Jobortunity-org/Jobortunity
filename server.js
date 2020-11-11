@@ -135,16 +135,35 @@ function handelEmployer(req, res) {
 
   let employerId = req.params.id;
   let stetment = `SELECT * FROM employers WHERE id=${employerId};`;
+  let selectByStetment = `SELECT DISTINCT jobtitle FROM applicants;`;
+  let selectApplicantStetment =`SELECT * FROM applicants;`;
 
-  client.query(stetment).then(data => {
+  client.query(selectByStetment).then( data =>{
+    let jobtitleInfo = data.rows;
+    console.log(jobtitleInfo);
 
-    res.send(data);
-    // res.render('pages/books/show', { singleBook : data.rows[0] });
+    client.query(selectApplicantStetment).then( data =>{
+      let applicantProfiles = data.rows;
+      console.log(applicantProfiles);
+      client.query(stetment).then(data => {
 
-  }).catch((error) => {
-    console.log('error happend in the handelApplicant SQL', error);
+        let EmployerInfo = data.rows[0];
+        res.render('employers/employer', { EmployerInfo: EmployerInfo , jobtitleInfo:jobtitleInfo ,applicantProfiles:applicantProfiles});
+      }).catch((error) => {
+        console.log('error happend in the handelEmployers SQL', error);
+      });
+
+
+    }).catch((error) => {
+      console.log('error happend in the handelEmployers selectApplicantStetment SQL', error);
+    });
+
+
+
+  }).catch( error => {
+
+    console.log('error happend in the handelEmployers selectByStetment', error);
   });
-
 
 }
 function handelApplicant(req, res) {
@@ -162,9 +181,8 @@ function handelApplicant(req, res) {
   }).catch((error) => {
     console.log('error happend in the handelApplicant SQL', error);
   });
-
-
 }
+
 
 function singUpPages(req, res) {
 
@@ -242,7 +260,7 @@ function CheckDBLogin(req, res) {
     if (data.rowCount !== 0) {
       res.redirect(`/${type.type}/${data.rows[0].id}`);
     } else {
-      res.redirect('/');
+      res.render('error',{errorMsg:'Login Failed: Invalid Username Or Password.',prePage:`/login?type=${type.type}`});
 
     }
 

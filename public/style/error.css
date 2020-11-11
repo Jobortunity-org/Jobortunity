@@ -1,0 +1,29 @@
+body{
+    background-image: url('../media/images/errorpage.png');
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+h1{
+    font-size: 75px;
+    color: #FE5762;
+    text-align: center;
+}
+
+p{
+    font-size: 30px;
+    color: #3C8D92;
+    text-align: center; 
+}
+
+button{
+    position: absolute;
+    left: 45%;
+    border-radius: 5px;
+    background-color:#FE5762;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}

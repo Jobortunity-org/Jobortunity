@@ -217,9 +217,14 @@ $('.fa-angle-right').click(function () {
 $(document).ready(function(){
   $('#saveInfo').click(function () {
     console.log('clicked');
-    
     $('#deleteInfo').hide();
     $(this).hide();
     $('.showuptade,#showuptadebtn').toggle();
   });
+
+
+  $('#deleteInfo').click(function () {
+
+  });
 });
+
