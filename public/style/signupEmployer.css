@@ -1,4 +1,8 @@
 
+a{
+    text-decoration: none;
+}
+
 body{
     display: flex;
     flex-direction: row;
@@ -31,7 +35,7 @@ body{
     position: absolute;
     top: 4%;
     right: 18%;
-    color: green;
+    color: rgb(22, 22, 22);
 }
 
 form{

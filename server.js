@@ -38,6 +38,7 @@ app.delete('/Applicant/:id', ApplicantDelete);
 app.get('/jobs', githubjob);
 app.get('/job', searchjob);
 app.get('/compare', comparing);
+app.get('/feedback', handleFeedback);
 
 
 /***********************CONSTRUCTOR START *********************************************** */
@@ -340,6 +341,9 @@ function ApplicantUpdate(req, res) {
 
 }
 
+function handleFeedback(req,res){
+  res.render('feedback');
+}
 
 
 client.connect().then(() => {
