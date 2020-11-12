@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/style/homepage.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap" rel="stylesheet">
+    <title>jobortunity</title>
+  </head>
+  <body>
+
+<%- include('header') %>
+
+    <div id="intro">
+      <header class="viewport-header">
+        <video playsinline autoplay muted id="video1" >
+          <source src="../public/media/videos/myvideo3.mp4" type="video/mp4" />
+        </video>
+
+        <img id="alternative" src="../public/media/images/images2/Screenshot (487).png" alt="">
+
+      </header>
+      <button type="submit" id="login" onclick="location.href = `/login?type=Employer`;">For Employer</button>
+      <button type="submit" id="login2" onclick="location.href = `/login?type=Applicant`;">For Applicant</button>
+    </div>
+
+    <div id="mainContainer">
+
+<div id="meet">
+  <h1> Meet Our Applicaints</h1>
+</div>
+
+      <ul class="honeycomb">
+         <li class="honeycomb-cell">
+          <img class="honeycomb-cell_img" src="https://aghyadalbalkhi-asac.github.io/jQuery-CDN/images/lubna.png"> 
+          <a href="/ApplicantFE/1"> <div class="honeycomb-cell_title">Lubna Husam</div></a> 
+        </li>
+        <li class="honeycomb-cell">
+           <img class="honeycomb-cell_img" src="https://aghyadalbalkhi-asac.github.io/jQuery-CDN/images/amal.jpg">  
+           <a href="/ApplicantFE/2"> <div class="honeycomb-cell_title">Amal Mohammad</div> </a>
+        </li>
+        <li class="honeycomb-cell">
+        <img class="honeycomb-cell_img" src="https://aghyadalbalkhi-asac.github.io/jQuery-CDN/images/emma.png"> 
+        <a href="/ApplicantFE/3"><div class="honeycomb-cell_title">Emma Jones</div> </a> 
+        </li>
+        <li class="honeycomb-cell">
+            <img class="honeycomb-cell_img" src="https://aghyadalbalkhi-asac.github.io/jQuery-CDN/images/dianagre.jpeg">
+            <a href="/ApplicantFE/4"> <div class="honeycomb-cell_title">Diana</div> </a> 
+        </li>
+        <li class="honeycomb-cell">
+            <img class="honeycomb-cell_img" src="../public/media/images/images2/5.jpg">
+            <div class="honeycomb-cell_title"><small></small></div>
+        </li>
+        <li class="honeycomb-cell">
+            <img class="honeycomb-cell_img" src="../public/media/images/shutterstock_1038585460.jpg">
+            <div class="honeycomb-cell_title"><small></small></div>
+        </li>
+        <li class="honeycomb-cell">
+            <img class="honeycomb-cell_img" src="../public/media/images/asif.1585845013.jpg">
+            <div class="honeycomb-cell_title"></div>
+        </li>
+        <li class="honeycomb-cell honeycomb_Hidden">
+        </li>
+    </ul>
+    </div>
+
+    <div id="howitworks">
+      
+       
+
+      <h1 id="meet2">How Does 
+        This Website 
+         Work?</h1>
+      <div id="workcontainer">
+
+        
+        
+      <div id="left">
+        <img class="workimg1" src="../public/media/images/woman.png" alt="">
+        <p id="myp"><strong> Applicants</strong>	 sign up and make a profile. They should include basic information in addition to a video of them which tells employers their story and what skills or talents they have.</p>
+      </div>
+
+      <div id="center">
+        <img class="workimg2" src="../public/media/images/man.png" alt="">
+        <p id="myp"> <strong>Investors & Employers</strong> Investors and Employers create an account in this website then search for the suitable candidate according to their needs. </p>
+      </div>
+    
+    <div id="right">
+      <img class="workimg3" src="../public/media/images/images2/togather.png" alt="">
+      <p id="myp"> <strong> Applicants & Employers</strong> then can be connected with each other so that they start with building their job.</p>
+      
+    </div>
+  </div>
+  
+  
+    <div id="vissioncontainer">
+
+      <div id="vision1">
+        <h1><i class="fa fa-eye"></i> Our Vision</h1>
+      <p> Since we are in a world filled with opportunities and chances, but we still face difficulties finding them. Therefore, we wanted to make the way shorter for skilled and talented people to connect them with the most suitable opportunity.
+        </p>
+      </div>
+
+      <div id="vision2">
+        <h1><i class="	fa fa-leaf"></i> Our Mission</h1>
+        
+        <p>This website was created based on solving the problem that is widely spread. We are providing a platform for people who want to make their voices to be heard and their skills to be noticed, by those who can offer the opportunity.</p>
+      </div>
+
+     
+    </div>
+
+
+    <%- include('footer') %>
+    
+    <script src="../public/js/app.js"></script>
+  </body>
+</html>

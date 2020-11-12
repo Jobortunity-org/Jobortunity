@@ -1,0 +1,167 @@
+
+
+
+
+<video autoplay muted id="myVideo">
+    <source src="../../public/media/images/try.mp4" type="video/mp4">
+</video>  
+
+<form action="/Applicant/<%= ApplicantInfo.id %>?_method=PUT" method="POST">
+
+<div id="all">
+<div class="wrap">
+    <div class="item">
+        <img src="<%= ApplicantInfo.images %>" alt="">
+        <div class="text">      
+          <input class="showuptade" type="text" id="images" name="images" value="<%= ApplicantInfo.images %>">     
+            <h2><%= ApplicantInfo.fullname %></h2>
+
+            <input class="showuptade" type="text" id="fullname" name="fullname" value="<%= ApplicantInfo.fullname %>">
+
+            <p><%= ApplicantInfo.jobtitle %>  </p>
+            <input class="showuptade" type="text" id="jobtitle" name="jobtitle" value="<%= ApplicantInfo.jobtitle %>">
+        </div> 
+    </div>
+</div>
+<!-- -------------------------------------------- -->
+<div id="b">
+<div id="AboutMe">
+    <h2>About Me</h2>
+    <!-- <img src="https://i.imgur.com/mPPEsss.gif" alt=""> -->
+    <!-- <hr style="height:.5px;color:gray;background-color:gray"> -->
+    <hr style="width:30%;text-align:left;margin-left:0">
+    <br>
+    <p id="aboutMeText">  <%= ApplicantInfo.aboutme %> </p>
+    <textarea class="showuptade"  id="aboutme" name="aboutme" rows="4" cols="50" >
+      <%= ApplicantInfo.aboutme %>
+      </textarea>
+</div>
+</div>  
+<!-- -------------------------------------------------- -->
+<div id="c">
+<div id="videoSection">
+    <iframe id="person" src="<%= ApplicantInfo.video %>" width="300" height="300"></iframe>
+</div>  
+</div>
+<!-- ------------------------------------------------ -->
+<!-- <div id="d"> -->
+<div id="skills">
+    <h2>personal Information</h2>
+    <hr style="width:30%;text-align:left;margin-left:0">
+<br>
+    <ul id="PersonalInfo">
+        <li>Full name: <%= ApplicantInfo.fullname %></li>
+
+        <br>
+        <li>Phone Number: <%= ApplicantInfo.phonenumber %></li>
+        <input class="showuptade" type="text" id="phonenumber" name="phonenumber" value="<%= ApplicantInfo.phonenumber %>">
+        <br>
+        <li>Email: <%= ApplicantInfo.email %></li>
+        <input class="showuptade" type="text" id="email" name="email" value="<%= ApplicantInfo.email %>">
+        <br>
+        <li>Adress: <%= ApplicantInfo.applicantaddress %></li>
+        <input class="showuptade" type="text" id="applicantaddress" name="applicantaddress" value="<%= ApplicantInfo.applicantaddress %>">
+        <br>
+        <li>D.O.B: <%= ApplicantInfo.dob %></li>
+        <input class="showuptade" type="text" id="dob" name="dob" value="<%= ApplicantInfo.dob %>">
+        <input class="showuptade" type="text" id="video" name="video" value="<%= ApplicantInfo.video %>">
+
+    </ul>
+</div>
+<!-- </div> -->
+<!------------------------------------------------  -->
+    
+<div id="e">
+<div class="main">
+    <div class="sideb">
+      <div class="header"><i class="fa fa-angle-left" aria-hidden="true"></i><span><span class="month"> </span><span class="year"></span></span><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+      <hr style="width:100%;text-align:left;margin-left:0; color: gray;">
+      <div class="calender">
+
+        <table>
+          <thead>
+            <tr class="weedays">
+              <th data-weekday="sun" data-column="0">Sun</th>
+              <th data-weekday="mon" data-column="1">Mon</th>
+              <th data-weekday="tue" data-column="2">Tue</th>
+              <th data-weekday="wed" data-column="3">Wed</th>
+              <th data-weekday="thu" data-column="4">Thu</th>
+              <th data-weekday="fri" data-column="5">Fri</th>
+              <th data-weekday="sat" data-column="6">Sat</th>
+            </tr>
+          </thead>
+          
+            <tr class="days" data-row="1">
+              <td data-column="0"></td>
+              <td data-column="1"></td>
+              <td data-column="2"></td>
+              <td data-column="3"></td>
+              <td data-column="4"></td>
+              <td data-column="5"></td>
+              <td data-column="6"></td>
+            </tr>
+            <tr class="days" data-row="2">
+              <td data-column="0"></td>
+              <td data-column="1"></td>
+              <td data-column="2"></td>
+              <td data-column="3"></td>
+              <td data-column="4"></td>
+              <td data-column="5"></td>
+              <td data-column="6"></td>
+            </tr>
+            <tr class="days" data-row="3">
+              <td data-column="0"></td>
+              <td data-column="1"></td>
+              <td data-column="2"></td>
+              <td data-column="3"></td>
+              <td data-column="4"></td>
+              <td data-column="5"></td>
+              <td data-column="6"></td>
+            </tr>
+            <tr class="days" data-row="4">
+              <td data-column="0"></td>
+              <td data-column="1"></td>
+              <td data-column="2"></td>
+              <td data-column="3"></td>
+              <td data-column="4"></td>
+              <td data-column="5"></td>
+              <td data-column="6"></td>
+            </tr>
+            <tr class="days" data-row="5">
+              <td data-column="0"></td>
+              <td data-column="1"></td>
+              <td data-column="2"></td>
+              <td data-column="3"></td>
+              <td data-column="4"></td>
+              <td data-column="5"></td>
+              <td data-column="6"></td>
+            </tr>
+           </tbody> 
+        </table>
+      </div>
+        
+    </div>
+  </div>   
+</div>     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <!-- ---------- -->
+<div class="clear">
+
+</div>
+
+<!-- --------------------------------------------------- -->
+<div id="f">
+<div id="achievment">
+    <h2>Achievment</h2>
+    <hr style="width:50%;text-align:left;margin-left:0">
+    <br>
+    <div>
+        <li> <%= ApplicantInfo.achievement %></li>
+        <input class="showuptade" type="text" id="achievement" name="achievement" value="<%= ApplicantInfo.achievement %>">
+    </div>
+
+</div>
+</div>  
+</div> 
+<input class="dlt" id="showuptadebtn"  style= "width: 200px; position: absolute;" type="submit" value="Save">
+</form>

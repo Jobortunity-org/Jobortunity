@@ -1,0 +1,120 @@
+
+
+#myVideo {
+    position: fixed;
+     width: 100%; 
+  }
+
+  a{
+    text-decoration: none;
+}
+ 
+  #boxes{
+     
+      position: absolute;
+       /* margin-left: 7%;  */
+       width: 80%;
+       margin-left: 10%;
+       margin-top: 9%;
+  }
+ 
+  #leftbox, #middlebox, #rightbox{
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     border-radius: 5px;
+     float:left; 
+     background:rgb(255, 255, 255); 
+     padding: 3% 3% 3% 3%;
+     width: 30%;
+  }
+  #leftbox { 
+     height:260px; 
+     margin-left: 25px;
+ } 
+ #middlebox{ 
+     height:260px; 
+     margin-left: 25px;
+ } 
+ #rightbox{ 
+     height:260px; 
+     margin-left: 25px;
+ } 
+ h2{ 
+     color:#3C8D92; 
+     text-align:center;
+     font-size: 25px; 
+ } 
+ 
+ #leftbox:hover, #middlebox:hover, #rightbox:hover{
+     background-color: #3c8e924d;
+     color: white;
+ }
+ 
+ #personal-Pic{
+   
+     height: 200px;
+     width: 210px;
+     
+ }
+ .ul{
+     font-size: 18px;
+ }
+ #select-Div{
+ position: absolute;
+ margin-top: 30%;
+ margin-left: 40%;
+ }
+ 
+ #select{
+     height: 50px;
+     width: 400px;
+     background-color: #3C8D92;
+     color: white;
+     font-size: 22px;
+     text-align: center;
+    padding-left:20%;
+    border-radius: 3px;
+ }
+ #select:hover{
+     background-color: #3c8e9277;
+ }
+ 
+ h3{
+     text-align: center;
+     font-size: 40px;
+ }
+ #people{
+     position: absolute;
+      margin-top:43%;
+     width: 90%;
+     margin-left: 9%;
+     padding-bottom: 3%;
+ }
+ 
+ .imgsdiv{
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     border-radius: 5px;
+     float:left; 
+     background:rgb(255, 255, 255); 
+     padding: 3% 3% 5% 3%;
+     width: 22%;
+     height:500px; 
+     margin-left: 25px;
+     margin-top: 20px;
+     display: none;
+  }
+  .app-Pic{
+      width: 220px;
+      /* margin-right: 50px; */
+ 
+  }
+  .Names{
+      text-align: center;
+      font-size: 30px;
+      text-decoration:none;
+  }
+ *{
+     font-family: 'Hind Madurai', sans-serif;
+     
+ }
+ 
+   
