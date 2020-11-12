@@ -7,6 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="../../public/style/folioAll.css">
 <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../public/style/header.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>JOBRTUNITY</title>
 
 
@@ -14,6 +17,20 @@
 </head>
 <body>
     
+    <nav style="position: absolute; z-index: 8;">
+        <ul><li><a href="/" class="active"><i class="fa fa-home"><small class="small"> Home</small></i></a></li></ul>
+        <ul><li><a><i class="fa fa-lightbulb-o"> <small class="small"> Vision</small></small></i></a></li></ul>
+        <ul><li><a><i class="fa fa-user-circle"> <small class="small"> Sign up</small></i></a></li></ul>
+        <ul><li><a><i class="fa fa-group"><small class="small"> About us</small></i></a></li></ul>
+        <ul><li><a href="/feedback"><i class="fa fa-edit"> <small class="small"> Feedback</small></i></a></li></ul>
+    
+    
+        <div class="tubelight">
+            <div class="light-ray"></div>
+        </div>
+    </nav>
+
+
         <%- include('details'); %>
        
         
@@ -30,6 +47,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../../public/js/employee.js"></script>
+    <script src="../../public/js/app.js"></script>
 </body>
 </html>
 
