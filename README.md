@@ -22,7 +22,7 @@ Our world is filled with opportunities and options. However, there are a lot of 
 On the other hand, a lot of employers and investors are looking for the suitable person to fill the empty place in their business or to provide them with some special service.
 
 # DataBase Diagram
-- ![](https://aghyadalbalkhi-asac.github.io/jQuery-CDN/images/DB.png)
+- ![DB](https://user-images.githubusercontent.com/70090893/98941918-e3100f00-24f5-11eb-9542-d49f5acf23e1.png)
 
 ## User Stories
 > * As a an employer, I would to find the suitable applicant to hire them.
