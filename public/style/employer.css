@@ -15,7 +15,7 @@
        /* margin-left: 7%;  */
        width: 80%;
        margin-left: 10%;
-       margin-top: 7%;
+       margin-top: 9%;
   }
  
   #leftbox, #middlebox, #rightbox{
@@ -24,18 +24,18 @@
      float:left; 
      background:rgb(255, 255, 255); 
      padding: 3% 3% 3% 3%;
-     width: 25%;
+     width: 30%;
   }
   #leftbox { 
-     height:220px; 
+     height:260px; 
      margin-left: 25px;
  } 
  #middlebox{ 
-     height:220px; 
+     height:260px; 
      margin-left: 25px;
  } 
  #rightbox{ 
-     height:220px; 
+     height:260px; 
      margin-left: 25px;
  } 
  h2{ 
@@ -52,7 +52,7 @@
  #personal-Pic{
    
      height: 200px;
-     width: 280px;
+     width: 210px;
      
  }
  .ul{
@@ -96,8 +96,8 @@
      float:left; 
      background:rgb(255, 255, 255); 
      padding: 3% 3% 5% 3%;
-     width: 15%;
-     height:400px; 
+     width: 22%;
+     height:500px; 
      margin-left: 25px;
      margin-top: 20px;
      display: none;
