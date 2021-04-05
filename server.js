@@ -8,7 +8,12 @@ let methodOverride = require('method-override');
 
 let pg = require('pg');
 const DATABASE_URL = process.env.DATABASE_URL;
-const client = new pg.Client(DATABASE_URL);
+const client = new pg.Client({
+  connectionString: DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
+});
 
 
 const app = express();
